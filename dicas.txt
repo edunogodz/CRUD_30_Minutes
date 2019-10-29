@@ -1,0 +1,26 @@
+Instalar o python
+python --version
+Instalando virtualenv e virtualenvwrappe
+pip install virtualenvwrapper-win
+Então crie um ambiente virtual para seu projeto:
+mkvirtualenv myproject
+Instalando Django
+pip install django
+django-admin --version
+
+python -m venv myvenv
+entrar na pasta myvenv/scripts/activate
+instalar o django
+django-admin startproject project .
+django-admin startapp products
+
+colocar o nome do projeto no settings.py
+
+criar as urls no urls.py
+from django.urls import path, include
+
+path('', include('products.urls')),
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
